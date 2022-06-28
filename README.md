@@ -1,6 +1,6 @@
-# TOP Template
+# Capstone Project #2 - Admin Dashboard
 
-This is a simple template repository for my TOP projects.
+This is a responsive Admin Dashboard implemented with CSS Grid.
 
 ![]()
 
@@ -26,3 +26,4 @@ Built with :heart: to [The Odin Project](https://www.theodinproject.com/), a won
 ## Acknowledgements
 
 - [Icons designed by Pixel perfect](https://www.flaticon.com/authors/pixel-perfect)
+- [Lorem Ipsum – Generator, Origins and Meaning](https://loremipsum.io/)
