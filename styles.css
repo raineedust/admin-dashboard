@@ -20,7 +20,7 @@ body {
 button {
   background-color: #6288f7;
   border: none;
-  border-radius: 3px;
+  border-radius: var(--card-radius);
   padding: 0.7rem 1.5rem 0.7rem 1.5rem;
 }
 
@@ -29,7 +29,7 @@ button {
 }
 
 .sectTitle {
-  margin-bottom: 0.8rem;
+  margin: 0 0 0.8rem 0.3rem;
   font-size: 1.3rem;
   font-weight: bold;
 }
@@ -52,13 +52,31 @@ hr {
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-template-rows: 1fr 4fr;
-  gap: var(--card-gap);
 }
 
 /* HEADER */
 
 .header {
   grid-area: 1 / 2 / 2 / 3;
+
+  padding: var(--card-padding);
+  background-color: white;
+}
+
+.headerBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.greeting {
+  display: flex;
+  gap: var(--card-gap);
+}
+
+.btn {
+  display: flex;
+  gap: var(--card-gap);
 }
 
 /* SIDEBAR */
@@ -135,7 +153,6 @@ hr {
   display: grid;
   grid-template-columns: 3fr 1fr;
   grid-template-rows: repeat(2, 1fr);
-  gap: var(--card-gap);
 }
 
 /* PROJECTS */
@@ -143,7 +160,7 @@ hr {
 .projects {
   grid-area: 1 / 1 / 3 / 2;
 
-  /* Content grid */
+  margin: var(--card-gap);
 }
 
 .projContainer {
@@ -162,6 +179,11 @@ hr {
 }
 
 /* BULLETIN */
+
+.bulletin {
+  margin: var(--card-gap);
+  margin-left: 0;
+}
 
 .announceCard {
   border: var(--card-border);
