@@ -30,6 +30,8 @@ button {
 
 .sectTitle {
   margin-bottom: 0.8rem;
+  font-size: 1.3rem;
+  font-weight: bold;
 }
 
 .bulletin,
@@ -53,9 +55,13 @@ hr {
   gap: var(--card-gap);
 }
 
+/* HEADER */
+
 .header {
   grid-area: 1 / 2 / 2 / 3;
 }
+
+/* SIDEBAR */
 
 .sidebar {
   /* Dashboard grid */
@@ -73,7 +79,24 @@ hr {
 
 .branding {
   background-color: #1a2342;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--card-padding);
 }
+
+.logo {
+  margin-right: 1.2rem;
+  width: 40px;
+}
+
+.branding > .sectTitle {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+/* MAIN CONTENT */
 
 .main-content {
   /* Dashboard grid */
@@ -85,6 +108,8 @@ hr {
   grid-template-rows: repeat(2, 1fr);
   gap: var(--card-gap);
 }
+
+/* PROJECTS */
 
 .projects {
   grid-area: 1 / 1 / 3 / 2;
@@ -107,6 +132,8 @@ hr {
   padding: var(--card-padding);
 }
 
+/* BULLETIN */
+
 .announceCard {
   border: var(--card-border);
   border-radius: var(--card-radius);
@@ -115,8 +142,10 @@ hr {
 }
 
 .announcePara {
-  padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+  padding: 1.5rem 1.5rem 1rem 1.5rem;
 }
+
+/* TRENDING */
 
 .trendCard {
   grid-area: 2 / 2 / 3 / 3;
