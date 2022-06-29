@@ -1,12 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
 
 * {
+  /* General */
   --card-radius: 0.5rem;
   --card-gap: 2rem;
   --card-padding: 1.5rem;
   --card-bg: white;
   --card-border: 2px solid #dfe0eb;
+  --pic-radius: 50%;
   --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+
+  /* Avatars */
+  --avatar1: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/06fbe298931623.5ee79b6a90221.jpg);
+  --avatar2: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/2e80bb98931623.5ee79b6a8f342.jpg);
+  --avatar3: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/8394f798931623.5ee79b6a909ea.jpg);
+  --avatar4: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/baa20698931623.5ee79b6a8ec2b.jpg);
+
   list-style: none;
 }
 
@@ -24,19 +33,22 @@ button {
   padding: 0.7rem 1.5rem 0.7rem 1.5rem;
 }
 
+.pic {
+  background: var(--avatar1) center center / cover no-repeat;
+  width: 75px;
+  height: 75px;
+  border-radius: var(--pic-radius);
+}
+
 .title {
   margin: 0;
+  font-weight: bold;
 }
 
 .sectTitle {
   margin: 0 0 0.8rem 0.3rem;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   font-weight: bold;
-}
-
-.bulletin,
-.trending {
-  margin-right: 1.5rem;
 }
 
 /* NOT WORKING */
@@ -51,7 +63,7 @@ hr {
 .container {
   display: grid;
   grid-template-columns: 1fr 4fr;
-  grid-template-rows: 1fr 4fr;
+  grid-template-rows: 5fr;
 }
 
 /* HEADER */
@@ -60,7 +72,12 @@ hr {
   grid-area: 1 / 2 / 2 / 3;
 
   padding: var(--card-padding);
-  background-color: white;
+  background-color: var(--card-bg);
+  box-shadow: var(--shadow);
+}
+
+.headerTop {
+  display: grid;
 }
 
 .headerBottom {
@@ -71,7 +88,19 @@ hr {
 
 .greeting {
   display: flex;
-  gap: var(--card-gap);
+  gap: 1rem;
+  align-items: center;
+}
+
+.greet1 {
+  margin: 0 0 0.8rem 0;
+  font-weight: 800;
+}
+
+.greet2 {
+  font-size: 1.5rem;
+  margin: 0%;
+  font-weight: 900;
 }
 
 .btn {
@@ -197,6 +226,10 @@ hr {
 }
 
 /* TRENDING */
+
+.trending {
+  margin: 0 2rem 2rem 0;
+}
 
 .trendCard {
   grid-area: 2 / 2 / 3 / 3;
