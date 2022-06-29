@@ -4,6 +4,7 @@
   /* General */
   --card-radius: 0.5rem;
   --card-gap: 2rem;
+  --info-gap: 1rem;
   --card-padding: 1.5rem;
   --vert-biased-padding: 1.5rem 3rem;
   --card-bg: white;
@@ -14,10 +15,11 @@
     0 4px 6px -4px rgb(0 0 0 / 0.1);
 
   /* Avatars */
-  --avatar1: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/06fbe298931623.5ee79b6a90221.jpg);
-  --avatar2: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/2e80bb98931623.5ee79b6a8f342.jpg);
-  --avatar3: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/8394f798931623.5ee79b6a909ea.jpg);
-  --avatar4: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/baa20698931623.5ee79b6a8ec2b.jpg);
+  --avatar1: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/ad7261133478775.61be78b5305fc.jpg);
+  --avatar2: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/06fbe298931623.5ee79b6a90221.jpg);
+  --avatar3: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/2e80bb98931623.5ee79b6a8f342.jpg);
+  --avatar4: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/8394f798931623.5ee79b6a909ea.jpg);
+  --avatar5: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/baa20698931623.5ee79b6a8ec2b.jpg);
 
   list-style: none;
 }
@@ -47,6 +49,34 @@ button {
 
 .pic-small {
   background: var(--avatar1) center center / cover no-repeat;
+  width: 45px;
+  height: 45px;
+  border-radius: var(--pic-radius);
+}
+
+.pic-small-1 {
+  background: var(--avatar2) center center / cover no-repeat;
+  width: 45px;
+  height: 45px;
+  border-radius: var(--pic-radius);
+}
+
+.pic-small-2 {
+  background: var(--avatar3) center center / cover no-repeat;
+  width: 45px;
+  height: 45px;
+  border-radius: var(--pic-radius);
+}
+
+.pic-small-3 {
+  background: var(--avatar4) center center / cover no-repeat;
+  width: 45px;
+  height: 45px;
+  border-radius: var(--pic-radius);
+}
+
+.pic-small-4 {
+  background: var(--avatar5) center center / cover no-repeat;
   width: 45px;
   height: 45px;
   border-radius: var(--pic-radius);
@@ -218,8 +248,8 @@ hr {
 
   /* Content grid */
   display: grid;
-  grid-template-columns: 3fr 1fr;
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: min-content 1fr;
 }
 
 /* PROJECTS */
@@ -233,8 +263,8 @@ hr {
 .projContainer {
   display: grid;
   gap: var(--card-gap);
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: 250px;
 }
 
 .projCard {
@@ -243,6 +273,24 @@ hr {
   background-color: var(--card-bg);
   box-shadow: var(--shadow);
   padding: var(--card-padding);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.projCard .title {
+  font-size: 1.2rem;
+}
+
+.actions {
+  font-size: 1.2rem;
+
+  align-self: flex-end;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: auto;
 }
 
 /* BULLETIN */
@@ -276,13 +324,21 @@ hr {
   border-radius: var(--card-radius);
   background-color: var(--card-bg);
   box-shadow: var(--shadow);
+  padding: var(--card-gap);
 }
 
 .trendPara {
   display: flex;
   align-items: center;
+  gap: var(--info-gap);
+}
 
-  padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+.trendPara + .trendPara {
+  margin-top: 1.5rem;
+}
+
+.account {
+  font-size: 0.9rem;
 }
 
 .account p:nth-child(2) {
