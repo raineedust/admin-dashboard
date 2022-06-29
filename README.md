@@ -10,9 +10,15 @@ This project is hosted on **GitHub Pages**. Feel free to [:point_right: try it o
 
 ## Motivation and Goals
 
-- [ ]
+- [x] Implement overall layout with Grid
+- [ ] Implement sectional layouts
+- [ ] Add interactive elements and greetings to header
+- [ ] Implement card-like layouts
+- [ ] Make it pretty!
 
 ## Limitations
+
+- -
 
 ## Resources
 
