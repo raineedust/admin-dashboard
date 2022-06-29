@@ -91,9 +91,38 @@ hr {
   width: 40px;
 }
 
-.branding > .sectTitle {
+.branding .sectTitle {
   font-size: 1.5rem;
   margin-bottom: 0;
+}
+
+.nav {
+  padding: var(--card-padding);
+  justify-content: center;
+}
+
+.navMain,
+.navMisc {
+  padding: 0;
+  margin: 0 0 0 1.2rem;
+}
+
+.navMisc {
+  margin-top: 3.5rem;
+}
+
+.sidebar li {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar i {
+  min-width: 30px;
+  font-size: 1.5rem;
+}
+
+.sidebar p {
+  margin-left: 1rem;
 }
 
 /* MAIN CONTENT */
