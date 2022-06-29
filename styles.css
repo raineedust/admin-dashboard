@@ -6,7 +6,7 @@
   --card-radius: 0.5rem;
   --card-gap: 2rem;
   --info-gap: 1rem;
-  --card-padding: 1.5rem;
+  --card-padding: 1.8rem;
   --vert-biased-padding: 1.5rem 3rem;
   --card-bg: white;
   --card-border: 2px solid #dfe0eb;
@@ -233,6 +233,7 @@ hr {
 
 .nav {
   padding: var(--card-padding);
+  padding-top: 3.3rem;
   justify-content: center;
 }
 
@@ -243,7 +244,7 @@ hr {
 }
 
 .navMisc {
-  margin-top: 3.5rem;
+  margin-top: 4.4rem;
 }
 
 .sidebar li {
@@ -334,7 +335,11 @@ hr {
 }
 
 .announcePara {
-  padding: 1.5rem 1.5rem 1rem 1.5rem;
+  padding: 0rem 0rem 0rem 0rem;
+}
+
+.announcePara + .announcePara {
+  margin-top: 1.5rem;
 }
 
 .announcePara p:nth-child(2) {
@@ -353,7 +358,7 @@ hr {
   border: var(--card-border);
   border-radius: var(--card-radius);
   background-color: var(--card-bg);
-  padding: var(--card-gap);
+  padding: var(--card-padding);
   transition: var(--shadow-anim);
 }
 
