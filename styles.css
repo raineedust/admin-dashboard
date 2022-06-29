@@ -5,8 +5,9 @@
   --card-gap: 2rem;
   --card-padding: 1.5rem;
   --card-bg: white;
-  list-style: none;
+  --card-border: 2px solid #dfe0eb;
   --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  list-style: none;
 }
 
 /* Semi-global values */
@@ -27,10 +28,20 @@ button {
   margin: 0;
 }
 
+.sectTitle {
+  margin-bottom: 0.8rem;
+}
+
+.bulletin,
+.trending {
+  margin-right: 1.5rem;
+}
+
 /* NOT WORKING */
 
 hr {
   color: #e7e5e4;
+  margin-bottom: 0px;
 }
 
 /* Local */
@@ -89,31 +100,33 @@ hr {
 }
 
 .projCard {
-  border: 2px solid #dfe0eb;
+  border: var(--card-border);
   border-radius: var(--card-radius);
   background-color: var(--card-bg);
   box-shadow: var(--shadow);
   padding: var(--card-padding);
 }
 
-.bulletin {
-  grid-area: 1 / 2 / 2 / 3;
-}
-
-.bulletin {
-  border: 2px solid #dfe0eb;
+.announceCard {
+  border: var(--card-border);
   border-radius: var(--card-radius);
   background-color: var(--card-bg);
+  box-shadow: var(--shadow);
 }
 
 .announcePara {
-  padding: var(--card-padding);
+  padding: 1.5rem 1.5rem 0.5rem 1.5rem;
 }
 
-.trending {
+.trendCard {
   grid-area: 2 / 2 / 3 / 3;
 
-  border: 2px solid #dfe0eb;
+  border: var(--card-border);
   border-radius: var(--card-radius);
   background-color: var(--card-bg);
+  box-shadow: var(--shadow);
+}
+
+.trendPara {
+  padding: 1.5rem 1.5rem 0.5rem 1.5rem;
 }
