@@ -5,10 +5,13 @@
   --card-radius: 0.5rem;
   --card-gap: 2rem;
   --card-padding: 1.5rem;
+  --vert-biased-padding: 1.5rem 3rem;
   --card-bg: white;
   --card-border: 2px solid #dfe0eb;
   --pic-radius: 50%;
   --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-large: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+    0 4px 6px -4px rgb(0 0 0 / 0.1);
 
   /* Avatars */
   --avatar1: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/06fbe298931623.5ee79b6a90221.jpg);
@@ -22,21 +25,30 @@
 /* Semi-global values */
 
 body {
-  background-color: aliceblue;
+  background-color: #e9f3ff;
   font-family: "Fira Sans", sans-serif;
 }
 
 button {
+  color: white;
   background-color: #6288f7;
   border: none;
   border-radius: var(--card-radius);
   padding: 0.7rem 1.5rem 0.7rem 1.5rem;
+  cursor: pointer;
 }
 
 .pic {
   background: var(--avatar1) center center / cover no-repeat;
   width: 75px;
   height: 75px;
+  border-radius: var(--pic-radius);
+}
+
+.pic-small {
+  background: var(--avatar1) center center / cover no-repeat;
+  width: 45px;
+  height: 45px;
   border-radius: var(--pic-radius);
 }
 
@@ -71,19 +83,45 @@ hr {
 .header {
   grid-area: 1 / 2 / 2 / 3;
 
-  padding: var(--card-padding);
+  padding: var(--vert-biased-padding);
   background-color: var(--card-bg);
-  box-shadow: var(--shadow);
+  box-shadow: var(--shadow-large);
+}
+
+.header i {
+  font-size: 1.2rem;
 }
 
 .headerTop {
   display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+.fa-magnifying-glass {
+  margin: 0 1.2rem 0 1.2rem;
+}
+
+#search {
+  border-radius: 99px;
+  border: none;
+  background-color: #e9f3ff;
+  padding: 0.75em 2em;
+  width: 40vw;
+}
+
+.profile {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+  font-weight: bold;
 }
 
 .headerBottom {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 1.5rem;
 }
 
 .greeting {
@@ -105,7 +143,7 @@ hr {
 
 .btn {
   display: flex;
-  gap: var(--card-gap);
+  gap: 0.8rem;
 }
 
 /* SIDEBAR */
@@ -241,5 +279,12 @@ hr {
 }
 
 .trendPara {
+  display: flex;
+  align-items: center;
+
   padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+}
+
+.account p:nth-child(2) {
+  margin: 0.5rem 0 0 0;
 }
