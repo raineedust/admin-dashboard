@@ -32,4 +32,9 @@ Built with :heart: to [The Odin Project](https://www.theodinproject.com/), a won
 ## Acknowledgements
 
 - [Icons designed by Pixel perfect](https://www.flaticon.com/authors/pixel-perfect)
+- [Free Vectors, Stock Photos & PSD Downloads | Freepik](https://www.freepik.com/)
 - [Lorem Ipsum – Generator, Origins and Meaning](https://loremipsum.io/)
+- [Font Awesome](https://fontawesome.com/)
+
+https://www.flaticon.com/search?word=search&color=gradient&order_by=4
+https://www.flaticon.com/search?word=notification&order_by=4
