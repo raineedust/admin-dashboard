@@ -2,6 +2,7 @@
 
 * {
   /* General */
+  --accent: #6288f7;
   --card-radius: 0.5rem;
   --card-gap: 2rem;
   --info-gap: 1rem;
@@ -11,16 +12,17 @@
   --card-border: 2px solid #dfe0eb;
   --card-desc: #7b7b7b;
   --pic-radius: 50%;
-  --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-anim: box-shadow 0.5s;
+  --shadow: 0 6px 10px 1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --shadow-large: 0 10px 15px -3px rgb(0 0 0 / 0.1),
     0 4px 6px -4px rgb(0 0 0 / 0.1);
 
   /* Avatars */
   --avatar1: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/ad7261133478775.61be78b5305fc.jpg);
   --avatar2: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/06fbe298931623.5ee79b6a90221.jpg);
-  --avatar3: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/2e80bb98931623.5ee79b6a8f342.jpg);
-  --avatar4: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/8394f798931623.5ee79b6a909ea.jpg);
-  --avatar5: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/baa20698931623.5ee79b6a8ec2b.jpg);
+  --avatar3: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/021791133478775.61be78b52fdc0.jpg);
+  --avatar4: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/baa20698931623.5ee79b6a8ec2b.jpg);
+  --avatar5: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/94448b137555517.620d31dd31632.jpg);
 
   list-style: none;
 }
@@ -34,10 +36,19 @@ body {
 
 button {
   color: white;
-  background-color: #6288f7;
+  background-color: var(--accent);
   border: none;
   border-radius: var(--card-radius);
   padding: 0.7rem 1.5rem 0.7rem 1.5rem;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #4366cf;
+}
+
+i {
   cursor: pointer;
 }
 
@@ -94,10 +105,16 @@ button {
   font-weight: bold;
 }
 
+.projCard:hover,
+.announceCard:hover,
+.trendCard:hover {
+  box-shadow: var(--shadow);
+}
+
 /* NOT WORKING */
 
 hr {
-  color: #e7e5e4;
+  color: var(--card-desc);
   margin-bottom: 0px;
 }
 
@@ -138,6 +155,8 @@ hr {
   background-color: #e9f3ff;
   padding: 0.75em 2em;
   width: 40vw;
+  box-shadow: var(--shadow);
+  outline-color: var(--accent);
 }
 
 .profile {
@@ -272,11 +291,12 @@ hr {
   border: var(--card-border);
   border-radius: var(--card-radius);
   background-color: var(--card-bg);
-  box-shadow: var(--shadow);
   padding: var(--card-padding);
 
   display: flex;
   flex-direction: column;
+
+  transition: var(--shadow-anim);
 }
 
 .projCard .title {
@@ -309,7 +329,8 @@ hr {
   border: var(--card-border);
   border-radius: var(--card-radius);
   background-color: var(--card-bg);
-  box-shadow: var(--shadow);
+  padding: var(--card-padding);
+  transition: var(--shadow-anim);
 }
 
 .announcePara {
@@ -332,8 +353,8 @@ hr {
   border: var(--card-border);
   border-radius: var(--card-radius);
   background-color: var(--card-bg);
-  box-shadow: var(--shadow);
   padding: var(--card-gap);
+  transition: var(--shadow-anim);
 }
 
 .trendPara p:nth-child(2) {
