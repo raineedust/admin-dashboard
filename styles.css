@@ -21,8 +21,8 @@
   --avatar1: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/ad7261133478775.61be78b5305fc.jpg);
   --avatar2: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/06fbe298931623.5ee79b6a90221.jpg);
   --avatar3: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/021791133478775.61be78b52fdc0.jpg);
-  --avatar4: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/baa20698931623.5ee79b6a8ec2b.jpg);
-  --avatar5: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/94448b137555517.620d31dd31632.jpg);
+  --avatar4: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/94448b137555517.620d31dd31632.jpg);
+  --avatar5: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/baa20698931623.5ee79b6a8ec2b.jpg);
   --pic-big: 75px;
   --pic-small: 45px;
 
@@ -45,13 +45,14 @@ button {
   transition: background-color 0.2s;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 button:hover {
   cursor: pointer;
   background-color: #4366cf;
-}
-
-i {
-  cursor: pointer;
 }
 
 .pic {
@@ -113,10 +114,10 @@ i {
   box-shadow: var(--shadow);
 }
 
-/* NOT WORKING */
+/* color NOT WORKING */
 
 hr {
-  color: var(--card-desc);
+  color: var(--card-desc) !important;
   margin-bottom: 0px;
 }
 
@@ -241,15 +242,16 @@ hr {
 }
 
 .nav {
-  padding: var(--card-padding);
-  padding-top: 3.3rem;
+  margin-top: 3.3rem;
   display: flex;
   justify-content: center;
+  cursor: pointer;
 }
 
 .navMain {
-  padding: 0;
+  padding: 1.1rem;
   margin: 0;
+  cursor: pointer;
 }
 
 .navMisc {
