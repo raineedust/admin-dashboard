@@ -1,6 +1,6 @@
 # Capstone Project #2 - Admin Dashboard
 
-This is a responsive Admin Dashboard implemented with CSS Grid.
+This is a responsive Admin Dashboard implemented with CSS Grid and Flexbox.
 
 ![](./assets/chrome_wYpAV.png)
 
