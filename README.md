@@ -2,7 +2,7 @@
 
 This is a responsive Admin Dashboard implemented with CSS Grid and Flexbox.
 
-![](./assets/chrome_t7SCd.png)
+![](./assets/chrome_Vnaqi.png)
 
 ## Live Preview
 
