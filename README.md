@@ -14,6 +14,7 @@ This project is hosted on **GitHub Pages**. Feel free to [:point_right: try it o
 - [ ] Implement sectional layouts
 - [ ] Add interactive elements and greetings to header
 - [ ] Implement card-like layouts
+- [ ] Utilize functions like `minmax()`, `clamp()` to improve grid responsiveness.
 - [ ] Make it pretty!
 
 ## Limitations
