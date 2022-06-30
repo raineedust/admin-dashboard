@@ -26,6 +26,7 @@
   --pic-big: 75px;
   --pic-small: 45px;
 
+  /* Not CSS Variables */
   list-style: none;
 }
 
@@ -53,6 +54,10 @@ a {
 button:hover {
   cursor: pointer;
   background-color: #4366cf;
+}
+
+i:hover {
+  cursor: pointer;
 }
 
 .pic {
@@ -117,7 +122,7 @@ button:hover {
 /* color NOT WORKING */
 
 hr {
-  color: var(--card-desc) !important;
+  border-top: 1px solid rgb(224, 224, 224);
   margin-bottom: 0px;
 }
 
@@ -207,20 +212,6 @@ hr {
   background-color: #101a33;
   color: aliceblue;
 }
-
-/* @media (max-width: 768px) {
-  body {
-    grid-template-columns: 1fr;
-  }
-  .sidebar {
-    position: fixed;
-    z-index: 2;
-    height: 100%;
-    width: 280px;
-    transition: transform 350ms ease-in-out;
-    transform: translateX(-100%);
-  }
-} */
 
 .branding {
   background-color: #1a2342;
