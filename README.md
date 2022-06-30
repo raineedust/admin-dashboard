@@ -44,6 +44,6 @@ Built with :heart: to [The Odin Project](https://www.theodinproject.com/), a won
 
 ## Acknowledgements
 
-- [Icons designed by Pixel perfect](https://www.flaticon.com/authors/pixel-perfect)
+- [Pixel Perfect](https://www.flaticon.com/authors/pixel-perfect)
 - [Lorem Ipsum – Generator, Origins and Meaning](https://loremipsum.io/)
 - [Font Awesome](https://fontawesome.com/)
