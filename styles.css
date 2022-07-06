@@ -38,7 +38,7 @@
 
 body {
   background-color: #e9f3ff;
-  font-family: "Fira Sans", sans-serif;
+  font-family: "Fira Sans", sans-serif !important;
 }
 
 button {
