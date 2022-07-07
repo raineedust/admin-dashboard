@@ -47,3 +47,5 @@ Built with :heart: to [The Odin Project](https://www.theodinproject.com/), a won
 - [Pixel Perfect](https://www.flaticon.com/authors/pixel-perfect)
 - [Lorem Ipsum – Generator, Origins and Meaning](https://loremipsum.io/)
 - [Font Awesome](https://fontawesome.com/)
+- [Browse Fonts - Google Fonts](https://fonts.google.com/)
+- [GitHub - sindresorhus/modern-normalize: 🐒 Normalize browsers' default style](https://github.com/sindresorhus/modern-normalize)
