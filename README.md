@@ -6,7 +6,7 @@ This is a responsive Admin Dashboard implemented with CSS Grid and Flexbox.
 
 ## Live Preview
 
-This project is hosted on **GitHub Pages**. Feel free to [:point_right: try it out](https://raineedust.github.io/capstone-admin-dashboard/)!
+This project is hosted on **GitHub Pages**. Feel free to [:point_right: try it out](https://tjy-justin.github.io/capstone-admin-dashboard/)!
 
 ## Motivation and Goals
 
